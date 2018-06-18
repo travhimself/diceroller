@@ -1,0 +1,71 @@
+/* Layout
+================================================== */
+
+body {
+    font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
+    color: #444;
+}
+
+#container {
+    padding: 40px;
+}
+
+
+
+/* Die Entry
+================================================== */
+
+.entry.master button.remove {
+    opacity: .4;
+}
+
+.entry {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.entry > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.entry > div:not(:last-child) {
+    margin-right: 20px;
+}
+
+.entry > div.input input {
+    width: 50px;
+}
+
+
+
+/* Controls
+================================================== */
+
+#controls {
+    
+}
+
+#controls #add {
+    margin-bottom: 20px;
+}
+
+#controls #roll {
+    margin-bottom: 20px;
+}
+
+
+
+/* Misc
+================================================== */
+
+button.add {
+
+}
+
+button.remove {
+
+}

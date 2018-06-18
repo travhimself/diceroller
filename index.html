@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>dice roller</title>
+    <meta name="description" content="A simple dice rolling app for board games">
+    <meta name="author" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="icon" href="img/favicon.ico">
+
+</head>
+
+<body>
+
+    <div id="container">
+        
+        <div id="entries">
+
+            <div class="entry master">
+                <div class="button remove">
+                    <button class="remove" disabled>-</button>
+                </div>
+                <div class="select die">
+                    <select>
+                        <option value="20">d20</option>
+                        <option value="12">d12</option>
+                        <option value="10">d10</option>
+                        <option value="8">d8</option>
+                        <option value="6">d6</option>
+                        <option value="4">d4</option>
+                    </select>
+                </div>
+                <div class="select mod_type">
+                    <select>
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                    </select>
+                </div>
+                <div class="input mod">
+                    <input type="number" value="0">
+                </div>
+                <div class="text result">
+                    <div></div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="controls">
+
+            <div id="add">
+                <button class="add">+</button>
+            </div>
+
+            <div id="roll">
+                <button class="roll">Roll</button> Total: <span></span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/scripts.js" type="text/javascript"></script>
+
+</body>
+
+</html>
