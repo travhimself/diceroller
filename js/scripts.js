@@ -4,9 +4,9 @@ const settings = {};
 
 const entries = document.querySelector('#entries');
 const entry_master = document.querySelector('#entries .entry.master');
-const add_button = document.querySelector('#controls #add button');
+const add_button = document.querySelector('#entries #add button');
 const roll_button = document.querySelector('#controls #roll button');
-const total = document.querySelector('#controls #roll span');
+const total = document.querySelector('#controls #total span');
 
 
 
@@ -34,7 +34,7 @@ const add_entry = () => {
     remove_button.removeAttribute('disabled');
     remove_button.addEventListener('click', remove_entry);
 
-    entries.appendChild(entry_clone);
+    entries.insertBefore(entry_clone, add_button.parentNode);
 }
 
 add_button.addEventListener('click', add_entry);

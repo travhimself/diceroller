@@ -12,19 +12,24 @@ body {
 
 
 
-/* Die Entry
+/* Die Entries
 ================================================== */
 
-.entry.master button.remove {
+#entries .entry.master button.remove {
     opacity: .4;
 }
 
-.entry {
+#entries .entry {
     display: flex;
+    padding: 0 20px;
     margin-bottom: 20px;
 }
 
-.entry > div {
+#entries .entry:nth-child(even) {
+    background: #eee;
+}
+
+#entries .entry > div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,12 +37,21 @@ body {
     height: 50px;
 }
 
-.entry > div:not(:last-child) {
+#entries .entry > div:not(:last-child) {
     margin-right: 20px;
 }
 
-.entry > div.input input {
+#entries .entry > div.input input {
     width: 50px;
+}
+
+#entries .entry > div.result div {
+    color: #3c6382;
+}
+
+#entries #add {
+    padding: 0 20px;
+    margin-bottom: 20px;
 }
 
 
@@ -46,15 +60,40 @@ body {
 ================================================== */
 
 #controls {
-    
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-top: 1px solid #ccc;
 }
 
-#controls #add {
-    margin-bottom: 20px;
+#controls button.major {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding: 0 20px;
+    border: none;
+    border-radius: 2px;
 }
 
-#controls #roll {
-    margin-bottom: 20px;
+#controls button.major svg.octicon {
+    position: relative;
+    top: 2px;
+    margin-right: 10px;
+}
+
+#controls button.major svg.octicon path {
+    fill: #fff;
+}
+
+#controls #roll button.major {
+    color: #fff;
+    background: #3c6382;
+    margin-right: 20px;
+}
+
+#controls #total {
+    display: flex;
+    align-items: center;
 }
 
 
